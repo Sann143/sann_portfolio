@@ -188,7 +188,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.pj-sec .row.two-cols {
+.pj-sec .row.ful-cols {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -350,15 +350,21 @@ a {
 }
 
 @media only screen and (max-width: 1199px) {
-
+.pj-sec .row.three-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media only screen and (max-width: 991px) {
-
+.pj-sec .row.ful-cols {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 @media only screen and (max-width: 767px) {
-
+    .pj-sec .row.three-cols {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 @media only screen and (max-width:640px) {
