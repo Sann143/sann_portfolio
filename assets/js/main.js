@@ -80,3 +80,28 @@ categories.forEach(button => {
     });
   });
 });
+
+// Category Link
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
+    if (category) {
+        const buttons = document.querySelectorAll(".category");
+
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+
+            if (btn.dataset.category === category) {
+                btn.classList.add("active");
+                btn.click(); // triggers your existing filter logic
+            }
+        });
+    }
+});
+
+
+
+
+
+
